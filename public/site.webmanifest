@@ -1,0 +1,10 @@
+{
+    "name": "David — IT Support & Web Developer",
+    "short_name": "David Portfolio",
+    "description": "Portofolio 3D David",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#070a11",
+    "theme_color": "#070a11",
+    "icons": []
+}

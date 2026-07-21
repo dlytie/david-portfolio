@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070a11">
+    <title>David Portfolio — Preview</title>
+    <link rel="stylesheet" href="/build/assets/fonts-C9MNnjVw.css">
+    <link rel="stylesheet" href="/build/assets/app-KqbPa5iD.css">
+    <script type="module" src="/build/assets/app-ko6PaUk3.js"></script>
+</head>
+<body x-data="portfolioApp" class="portfolio-body" data-page="portfolio">
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" data-site-header>
+        <div class="nav-shell">
+            <a href="#home" class="brand" aria-label="Kembali ke beranda">
+                <span class="brand__mark" aria-hidden="true">D</span>
+                <span class="brand__text"><strong>David</strong><small>Digital workspace</small></span>
+            </a>
+            <nav class="nav-desktop" aria-label="Navigasi utama">
+                <a href="#about" data-nav-link>Tentang</a>
+                <a href="#skills" data-nav-link>Keahlian</a>
+                <a href="#projects" data-nav-link>Proyek</a>
+                <a href="#contact" data-nav-link>Kontak</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="availability" href="#contact"><span aria-hidden="true"></span>Terbuka untuk peluang</a>
+                <button class="menu-toggle" type="button" @click="menuOpen = !menuOpen" :aria-expanded="menuOpen.toString()" aria-controls="mobile-menu" aria-label="Buka atau tutup menu"><span></span><span></span></button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="nav-mobile" aria-label="Navigasi ponsel" x-cloak x-show="menuOpen" @click.outside="menuOpen = false">
+            <a href="#about" @click="menuOpen = false">Tentang <span>01</span></a>
+            <a href="#skills" @click="menuOpen = false">Keahlian <span>02</span></a>
+            <a href="#projects" @click="menuOpen = false">Proyek <span>03</span></a>
+            <a href="#contact" @click="menuOpen = false">Kontak <span>04</span></a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="hero section-observer" aria-labelledby="hero-title">
+            <div class="scene-stage" data-scene-root data-asset-base="/models/workspace/kenney" data-custom-model="" aria-hidden="true">
+                <canvas class="scene-canvas" data-scene-canvas></canvas>
+                <div class="scene-loader" data-scene-loader><span class="scene-loader__line"><i></i></span><span class="scene-loader__text">Menyiapkan workspace</span></div>
+                <div class="scene-fallback" data-scene-fallback><div class="fallback-monitor"><span>DAVID.OS</span></div><div class="fallback-desk"></div></div>
+                <p class="scene-hint" data-scene-hint>Gerakkan pointer · Monitor dan router dapat dipilih</p>
+            </div>
+            <div class="section-shell hero__layout">
+                <div class="hero__copy" data-reveal>
+                    <p class="eyebrow"><span>01</span>IT Support · Infrastructure · Laravel</p>
+                    <h1 id="hero-title">Teknologi yang <span>tetap bekerja.</span></h1>
+                    <p class="hero__lead">Saya membantu operasional tetap berjalan melalui dukungan perangkat, jaringan, server, dan aplikasi web yang praktis.</p>
+                    <div class="hero__actions">
+                        <a class="button button--primary" href="#projects">Lihat proyek <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        <a class="button button--ghost" href="#about">Tentang saya</a>
+                    </div>
+                    <div class="hero__meta"><div><span>Berbasis di</span><strong>Medan, Sumatera Utara, Indonesia</strong></div><div><span>Fokus</span><strong>Support · Server · Web</strong></div></div>
+                </div>
+                <div class="hero__scene-space" aria-hidden="true"></div>
+            </div>
+            <a class="scroll-cue" href="#about"><span>Scroll untuk menjelajah</span><i aria-hidden="true"></i></a>
+        </section>
+
+        <section id="about" class="chapter chapter--about section-observer" aria-labelledby="about-title" data-scene-chapter="about">
+            <div class="section-shell">
+                <div class="section-heading" data-reveal><p class="eyebrow"><span>02</span>Tentang saya</p><h2 id="about-title">Menjembatani perangkat,<br><em>infrastruktur, dan aplikasi.</em></h2></div>
+                <div class="about-grid">
+                    <article class="profile-card" data-reveal>
+                        <div class="profile-card__visual"><div class="profile-placeholder" aria-label="Foto profil dapat ditambahkan kemudian"><span>DV</span><small>Photo ready</small></div><span class="profile-card__index">D/01</span></div>
+                        <div class="profile-card__content">
+                            <p>Berpengalaman menangani kebutuhan IT operasional seperti troubleshooting hardware dan software, jaringan, CCTV, printer, serta administrasi server. Saya juga membangun aplikasi Laravel untuk menyederhanakan pencatatan, pelaporan, dan proses kerja sehari-hari.</p>
+                            <dl class="profile-facts"><div><dt>Peran</dt><dd>IT Support &amp; Web Developer</dd></div><div><dt>Lokasi</dt><dd>Medan, Indonesia</dd></div></dl>
+                        </div>
+                    </article>
+                    <div class="about-details">
+                        <div class="stats-grid" data-reveal><div class="stat-card"><strong>5+</strong><span>Tahun pengalaman IT</span></div><div class="stat-card"><strong>4</strong><span>Proyek pilihan</span></div><div class="stat-card"><strong>2</strong><span>Ekosistem: Windows &amp; Linux</span></div></div>
+                        <article class="timeline-card" data-reveal>
+                            <div class="card-kicker">Pengalaman</div>
+                            <div class="timeline-item"><span class="timeline-item__dot" aria-hidden="true"></span><div><p>Sekarang</p><h3>IT Support</h3><strong>RSU Bunda Thamrin</strong><span>Mendukung kebutuhan teknis operasional, perangkat pengguna, jaringan, CCTV, printer, dan troubleshooting harian.</span></div></div>
+                            <div class="education-item"><span>Pendidikan</span><div><h3>S1 Teknik Informatika</h3><p>Universitas Putera Batam · 2014 — 2021</p></div></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="chapter chapter--skills section-observer" aria-labelledby="skills-title" data-scene-chapter="skills">
+            <div class="section-shell">
+                <div class="section-heading section-heading--split" data-reveal><div><p class="eyebrow"><span>03</span>Kapabilitas</p><h2 id="skills-title">Dari meja bantuan<br><em>hingga server.</em></h2></div><p>Satu pola kerja yang sama: pahami masalahnya, sederhanakan solusinya, lalu pastikan dapat dipelihara.</p></div>
+                <div class="skills-list">
+                    <article class="skill-row" data-reveal><span class="skill-row__number">01</span><div class="skill-row__title"><h3>IT Support</h3><p>Menjaga perangkat dan pengguna tetap produktif melalui diagnosis serta penyelesaian masalah yang terstruktur.</p></div><ul><li>Hardware</li><li>Windows</li><li>Printer</li><li>Helpdesk</li></ul><span class="skill-row__arrow" aria-hidden="true">↗</span></article>
+                    <article class="skill-row" data-reveal><span class="skill-row__number">02</span><div class="skill-row__title"><h3>Network &amp; CCTV</h3><p>Menangani konektivitas lokal, perangkat jaringan, pemantauan, dan troubleshooting lapangan.</p></div><ul><li>LAN</li><li>Mikrotik</li><li>CCTV</li><li>TCP/IP</li></ul><span class="skill-row__arrow" aria-hidden="true">↗</span></article>
+                    <article class="skill-row" data-reveal><span class="skill-row__number">03</span><div class="skill-row__title"><h3>Server &amp; Self-hosting</h3><p>Membangun layanan privat untuk penyimpanan, akses jarak jauh, dan kebutuhan internal.</p></div><ul><li>Ubuntu Server</li><li>CasaOS</li><li>Nextcloud</li><li>Tailscale</li></ul><span class="skill-row__arrow" aria-hidden="true">↗</span></article>
+                    <article class="skill-row" data-reveal><span class="skill-row__number">04</span><div class="skill-row__title"><h3>Web Development</h3><p>Membuat aplikasi web yang fokus pada alur kerja, pencatatan data, laporan, dan kemudahan penggunaan.</p></div><ul><li>Laravel</li><li>PHP</li><li>Blade</li><li>MySQL</li></ul><span class="skill-row__arrow" aria-hidden="true">↗</span></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="chapter chapter--projects section-observer" aria-labelledby="projects-title" data-scene-chapter="projects">
+            <div class="section-shell">
+                <div class="section-heading section-heading--split" data-reveal><div><p class="eyebrow"><span>04</span>Proyek pilihan</p><h2 id="projects-title">Masalah nyata.<br><em>Solusi yang digunakan.</em></h2></div><p>Setiap proyek berangkat dari kebutuhan praktis—mencatat data, merapikan proses, atau membangun layanan yang dapat diandalkan.</p></div>
+                <div class="projects-grid">
+                    <article class="project-card" style="--project-accent:#22d3ee" data-reveal><button class="project-card__button" type="button" @click="openProject('david-sales', $event.currentTarget)"><div class="project-card__visual"><div class="project-placeholder" aria-hidden="true"><span class="project-placeholder__label">DA</span><span class="project-placeholder__window"><i></i><i></i><i></i></span><span class="project-placeholder__grid"></span></div><span class="project-card__status">Dalam pengembangan</span><span class="project-card__open">↗</span></div><div class="project-card__body"><div class="project-card__meta"><span>01</span><span>Sales tracking</span></div><h3>David Sales</h3><p>Aplikasi pencatatan penjualan yang mengubah transaksi harian menjadi ringkasan omzet dan laporan.</p><ul><li>Laravel</li><li>Blade</li><li>MySQL</li></ul></div></button></article>
+                    <article class="project-card" style="--project-accent:#8b5cf6" data-reveal><button class="project-card__button" type="button" @click="openProject('finance-panel', $event.currentTarget)"><div class="project-card__visual"><div class="project-placeholder" aria-hidden="true"><span class="project-placeholder__label">FI</span><span class="project-placeholder__window"><i></i><i></i><i></i></span><span class="project-placeholder__grid"></span></div><span class="project-card__status">Berjalan di home server</span><span class="project-card__open">↗</span></div><div class="project-card__body"><div class="project-card__meta"><span>02</span><span>Expense management</span></div><h3>David Finance Panel</h3><p>Panel pencatatan pengeluaran dengan dashboard, kategori, laporan, filter, dan hak akses.</p><ul><li>Laravel</li><li>MariaDB</li><li>Systemd</li></ul></div></button></article>
+                    <article class="project-card" style="--project-accent:#f59e9e" data-reveal><button class="project-card__button" type="button" @click="openProject('wedding-invitation', $event.currentTarget)"><div class="project-card__visual"><div class="project-placeholder" aria-hidden="true"><span class="project-placeholder__label">WE</span><span class="project-placeholder__window"><i></i><i></i><i></i></span><span class="project-placeholder__grid"></span></div><span class="project-card__status">Selesai</span><span class="project-card__open">↗</span></div><div class="project-card__body"><div class="project-card__meta"><span>03</span><span>Interactive website</span></div><h3>Undangan Digital</h3><p>Undangan pernikahan responsif dengan media, countdown, lokasi, RSVP, dan ucapan.</p><ul><li>Laravel</li><li>JavaScript</li><li>CSS</li></ul></div></button></article>
+                    <article class="project-card" style="--project-accent:#34d399" data-reveal><button class="project-card__button" type="button" @click="openProject('home-server', $event.currentTarget)"><div class="project-card__visual"><div class="project-placeholder" aria-hidden="true"><span class="project-placeholder__label">HO</span><span class="project-placeholder__window"><i></i><i></i><i></i></span><span class="project-placeholder__grid"></span></div><span class="project-card__status">Aktif</span><span class="project-card__open">↗</span></div><div class="project-card__body"><div class="project-card__meta"><span>04</span><span>Infrastructure</span></div><h3>Home Server &amp; Private Cloud</h3><p>Private cloud rumahan untuk penyimpanan, sinkronisasi, dan akses jarak jauh yang aman.</p><ul><li>Ubuntu Server</li><li>Nextcloud</li><li>Tailscale</li></ul></div></button></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="chapter chapter--contact section-observer" aria-labelledby="contact-title" data-scene-chapter="contact">
+            <div class="section-shell contact-grid">
+                <div class="contact-copy" data-reveal><p class="eyebrow"><span>05</span>Kontak</p><h2 id="contact-title">Mari membuat sistem<br><em>yang benar-benar berguna.</em></h2><p>Terbuka untuk peluang IT Support, dukungan infrastruktur, dan pengembangan aplikasi web yang berangkat dari kebutuhan nyata.</p></div>
+                <div class="contact-panel" data-reveal><div class="contact-ready"><span class="contact-ready__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 7l8 6 8-6"/></svg></span><p>Saluran kontak sedang disiapkan.</p><h3>Strukturnya sudah siap—detail kontak dapat ditambahkan kapan saja.</h3><a class="button button--ghost" href="#projects">Lihat pekerjaan saya</a></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="section-shell site-footer__inner"><a href="#home" class="brand"><span class="brand__mark">D</span><span class="brand__text"><strong>David</strong><small>Digital workspace</small></span></a><p>IT Support &amp; Web Developer · Medan, Indonesia</p><a href="#home">Kembali ke atas ↑</a></div></footer>
+
+    <dialog class="project-dialog" x-ref="projectDialog" aria-label="Detail proyek" @close="onDialogClosed" @click="closeDialogFromBackdrop($event)">
+        <button class="dialog-close" type="button" @click="closeProject" aria-label="Tutup detail proyek"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        <article class="dialog-project" style="--project-accent:#22d3ee" x-show="activeProject === 'david-sales'" x-cloak>
+            <div class="dialog-project__visual"><div class="project-placeholder project-placeholder--large" aria-hidden="true"><span class="project-placeholder__label">DA</span><span class="project-placeholder__window"><i></i><i></i><i></i></span><span class="project-placeholder__grid"></span></div></div>
+            <div class="dialog-project__content"><p class="eyebrow"><span>01</span>Sales tracking</p><h2>David Sales</h2><p class="dialog-project__summary">Aplikasi pencatatan penjualan yang mengubah transaksi harian menjadi ringkasan omzet dan laporan yang mudah dibaca.</p><div class="case-grid"><div><span>Masalah</span><p>Pencatatan tersebar dan sulit dirangkum.</p></div><div><span>Solusi</span><p>Input, perhitungan, filter, pencarian, dan laporan dalam satu aplikasi.</p></div><div><span>Hasil</span><p>Rekap harian dapat dilihat tanpa menghitung ulang.</p></div></div><div class="project-evidence"><div class="project-evidence__narrative"><div><span>Kontribusi saya</span><p>Merancang alur data, dashboard, serta pengalaman penggunaan.</p></div><div><span>Tantangan teknis</span><p>Menjaga proses input cepat dan perhitungan dapat dipercaya.</p></div></div><div class="project-feature-list"><span>Fitur utama</span><ul><li>Pencatatan produk</li><li>Omzet otomatis</li><li>Filter dan pencarian</li><li>Ekspor laporan</li></ul></div></div><div class="dialog-project__footer"><ul><li>Laravel</li><li>Blade</li><li>MySQL</li></ul></div></div>
+        </article>
+        <article class="dialog-project" style="--project-accent:#8b5cf6" x-show="activeProject === 'finance-panel'" x-cloak><div class="dialog-project__content"><p class="eyebrow"><span>02</span>Expense management</p><h2>David Finance Panel</h2><p class="dialog-project__summary">Dashboard pengeluaran dengan laporan, filter, kategori, dan hak akses.</p></div></article>
+        <article class="dialog-project" style="--project-accent:#f59e9e" x-show="activeProject === 'wedding-invitation'" x-cloak><div class="dialog-project__content"><p class="eyebrow"><span>03</span>Interactive website</p><h2>Undangan Digital</h2><p class="dialog-project__summary">Pengalaman undangan pernikahan yang personal dan responsif.</p></div></article>
+        <article class="dialog-project" style="--project-accent:#34d399" x-show="activeProject === 'home-server'" x-cloak><div class="dialog-project__content"><p class="eyebrow"><span>04</span>Infrastructure</p><h2>Home Server &amp; Private Cloud</h2><p class="dialog-project__summary">Penyimpanan dan akses file keluarga melalui private cloud.</p></div></article>
+    </dialog>
+
+    <div class="scene-tooltip" data-scene-tooltip role="status" aria-live="polite"></div>
+</body>
+</html>
